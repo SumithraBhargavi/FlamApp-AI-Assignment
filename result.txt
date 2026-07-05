@@ -1,0 +1,7 @@
+Estimated Parameters
+
+Theta = 29.999475
+M = 0.030000
+X = 54.999137
+
+Objective Error = 31.854430
