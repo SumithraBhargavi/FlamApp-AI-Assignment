@@ -12,21 +12,40 @@ print("\nDataset Shape:")
 print(data.shape)
 
 print("\nColumn Names:")
-print(data.columns)
+print(data.columns.tolist())
 
 print("\nMissing Values:")
 print(data.isnull().sum())
 
-# Plot the points
+# Create the figure
 plt.figure(figsize=(8, 8))
-plt.scatter(data["x"], data["y"], s=10)
-plt.title("Input Curve")
-plt.xlabel("x")
-plt.ylabel("y")
+
+# Draw the curve in the order of the CSV rows
+plt.plot(
+    data["x"],
+    data["y"],
+    linewidth=1,
+    color="blue",
+    label="Curve"
+)
+
+# Draw the points
+plt.scatter(
+    data["x"],
+    data["y"],
+    s=10,
+    color="red",
+    label="Data Points"
+)
+
+plt.title("Input Curve (CSV Order)")
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.grid(True)
+plt.legend()
 
 # Save the figure
-plt.savefig("../results/input_curve.png", dpi=300)
+plt.savefig("../results/input_curve_ordered.png", dpi=300)
 
 # Show the figure
 plt.show()
