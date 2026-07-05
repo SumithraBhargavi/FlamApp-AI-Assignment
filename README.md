@@ -155,24 +155,8 @@ python visualize.py
 ## Final Estimated Parametric Equation
 
 ```latex
-\left(
-t*\cos(0.52359)
--
-e^{0.03\left|t\right|}
-\cdot
-\sin(0.3t)\sin(0.52359)
-+
-54.999137,
-42
-+
-t*\sin(0.52359)
-+
-e^{0.03\left|t\right|}
-\cdot
-\sin(0.3t)\cos(0.52359)
-\right)
+\left(t*\cos(0.52359)-e^{0.03\left|t\right|}\cdot\sin(0.3t)\sin(0.52359)+54.999137,42+t*\sin(0.52359)+e^{0.03\left|t\right|}\cdot\sin(0.3t)\cos(0.52359)\right)
 ```
-
 # Assumptions
 
 - Parameter **t** is uniformly sampled in the interval **[6, 60]**.
