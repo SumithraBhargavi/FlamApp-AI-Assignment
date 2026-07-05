@@ -8,26 +8,24 @@ The solution uses numerical optimization and nearest-neighbor matching to fit th
 
 ---
 
-# Problem Statement
+## Problem Statement
 
 Estimate the unknown parameters of the following parametric equations:
 
-\[
-x=t\cos(\theta)-e^{M|t|}\sin(0.3t)\sin(\theta)+X
-\]
+$$
+x = t\cos(\theta) - e^{M|t|}\sin(0.3t)\sin(\theta) + X
+$$
 
-\[
-y=42+t\sin(\theta)+e^{M|t|}\sin(0.3t)\cos(\theta)
-\]
+$$
+y = 42 + t\sin(\theta) + e^{M|t|}\sin(0.3t)\cos(\theta)
+$$
 
 Subject to:
 
-- **0° < θ < 50°**
-- **-0.05 < M < 0.05**
-- **0 < X < 100**
-- **6 < t < 60**
-
----
+- \(0^\circ < \theta < 50^\circ\)
+- \(-0.05 < M < 0.05\)
+- \(0 < X < 100\)
+- \(6 < t < 60\)
 
 # Project Structure
 
